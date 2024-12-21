@@ -350,7 +350,7 @@ pub fn App() -> impl IntoView {
 
 Because the Rust compiler now knows the concrete type of the prop, and therefore its size in memory even in the `None` case, this compiles fine.
 
-> In this particular case, `&dyn Fn() -> i32` will cause lifetime issues, but in other cases, it may be a possibility.
+> In this particular case, `&dyn Fn() -> i32` will not cause lifetime issues, but in other cases, it may be a possibility.
 
 ## Documenting Components
 
